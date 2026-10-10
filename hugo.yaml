@@ -1,6 +1,6 @@
 baseURL: https://2ruman.github.io/
 locale: en-us
-title: Truman's Blog
+title: Truman
 hasCJKLanguage: true
 enableGitInfo: true
 enableRobotsTXT: true
@@ -40,11 +40,16 @@ menu:
         label: false # optional, default is false
 
 params:
-  description: Notes on Android, Linux, Java, Python, C/C++ and more, plus thoughts on life.
+  description: "Practical notes from an Android engineer — and a few warm ones from everyday life."
 
   navbar:
     displayTitle: true
-    displayLogo: false
+    displayLogo: true
+    logo:
+      path: images/logo.svg
+      dark: images/logo-dark.svg
+      width: 22
+      height: 22
 
   theme:
     default: system

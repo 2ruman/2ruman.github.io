@@ -1,0 +1,17 @@
+{{- /* Monospace font and blinking cursor for the home banner's terminal-style quote */ -}}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300&display=swap">
+<style>
+  .terminal-cursor {
+    display: inline-block;
+    margin-left: 0.1em;
+    animation: terminal-blink 1s steps(1) infinite;
+  }
+  @keyframes terminal-blink {
+    50% { opacity: 0; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .terminal-cursor { animation: none; }
+  }
+</style>
