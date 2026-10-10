@@ -2,10 +2,19 @@ baseURL: https://2ruman.github.io/
 locale: en-us
 title: Truman's Blog
 hasCJKLanguage: true
+enableGitInfo: true
+enableRobotsTXT: true
 
 module:
   imports:
     - path: github.com/imfing/hextra
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    noClasses: false
 
 menu:
   main:
@@ -24,3 +33,38 @@ menu:
       url: https://github.com/2ruman
       params:
         icon: github
+    - name: Theme Toggle
+      weight: 5
+      params:
+        type: theme-toggle
+        label: false # optional, default is false
+
+params:
+  description: Notes on Android, Linux, Java, Python, C/C++ and more, plus thoughts on life.
+
+  navbar:
+    displayTitle: true
+    displayLogo: false
+
+  theme:
+    default: system
+    displayToggle: false # the toggle already lives in the navbar menu
+
+  footer:
+    displayCopyright: true
+    displayPoweredBy: true
+
+  displayUpdatedDate: true
+  dateFormat: "January 2, 2006"
+
+  editURL:
+    enable: true
+    base: https://github.com/2ruman/2ruman.github.io/edit/main/content
+
+  blog:
+    list:
+      displayTags: true
+      sortBy: date
+      sortOrder: desc
+  toc:
+    displayTags: true
