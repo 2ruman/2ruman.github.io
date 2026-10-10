@@ -1,0 +1,11 @@
+# Hugo 빌드 결과물
+public/
+
+# Hugo 캐시
+resources/_gen/
+
+# Hugo 잠금 파일
+.hugo_build.lock
+
+# macOS
+.DS_Store

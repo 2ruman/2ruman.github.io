@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ .Title }}</title>
+</head>
+<body>
+  <a href="/">&larr; Go Home</a>
+  <h1>{{ .Title }}</h1>
+  {{ .Content }}
+
+  {{ with .Sections }}
+    <h2>Subcategories</h2>
+    <ul>
+      {{ range . }}
+        <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+      {{ end }}
+    </ul>
+  {{ end }}
+
+  {{ with .RegularPages }}
+    <h2>Posts</h2>
+    <ul>
+      {{ range . }}
+        <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+      {{ end }}
+    </ul>
+  {{ end }}
+</body>
+</html>

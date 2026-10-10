@@ -1,0 +1,4 @@
+baseURL = 'https://2ruman.github.io/'
+locale = 'en-us'
+title = "Truman's Blog"
+hasCJKLanguage = true

@@ -1,0 +1,10 @@
+<ul>
+  {{ range .Sections }}
+    <li>
+      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      {{ if .Sections }}
+        {{ partial "category-tree.html" . }}
+      {{ end }}
+    </li>
+  {{ end }}
+</ul>
